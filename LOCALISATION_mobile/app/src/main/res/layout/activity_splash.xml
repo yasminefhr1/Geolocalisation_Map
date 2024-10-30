@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- ImageView pour la Terre -->
+    <ImageView
+        android:id="@+id/earthImage"
+        android:layout_width="319dp"
+        android:layout_height="286dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/earth" />
+
+    <!-- ImageView pour le pointeur -->
+    <ImageView
+        android:id="@+id/pointerImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/earthImage"
+        android:layout_alignRight="@id/earthImage"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-23dp"
+        android:layout_marginRight="141dp"
+        android:src="@drawable/pointer_icon" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="154dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/earthImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="84dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+</RelativeLayout>
